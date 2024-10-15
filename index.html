@@ -10,27 +10,27 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter city name" spellcheck="false">
-            <button><img src="images/search.png" ></button>
+            <button><img src="C:/Users/laksh/OneDrive/Desktop/projects/weather/search.png" ></button>
         </div>
         <div class="error">
             <p>Invalid City Name</p>
         </div>
         <div class="weather">
             <div class="abc">
-                <img src="images/rain.png"  class="weather-icon">
+                <img src="C:/Users/laksh/OneDrive/Desktop/projects/weather/rain.png"  class="weather-icon">
             </div>
             <h1 class="temp">22 °C</h1>
             <h2 class="city">New York</h2>
             <div class="details">
                 <div class="col">
-                    <img src="images/humidity.png">
+                    <img src="C:/Users/laksh/OneDrive/Desktop/projects/weather/humidity.png">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="images/wind.png">
+                    <img src="C:/Users/laksh/OneDrive/Desktop/projects/weather/wind.png">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
@@ -58,19 +58,19 @@
                 document.querySelector(".humidity").innerHTML= data.main.humidity+" %";
                 document.querySelector(".wind").innerHTML= data.wind.speed+" km/h";
                 if(data.weather[0].main=="Clouds"){
-                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/weather/clouds.png";
+                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/projects/weather/clouds.png";
                 }
                 else if(data.weather[0].main=="Clear"){
-                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/weather/clear.png";
+                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/projects/weather/clear.png";
                 }
                 else if(data.weather[0].main=="Rain"){
-                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/weather/rain.png";
+                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/projects/weather/rain.png";
                 }
                 else if(data.weather[0].main=="Drizzle"){
-                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/weather/drizzle.png";
+                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/projects/weather/drizzle.png";
                 }
                 else if(data.weather[0].main=="Mist"){
-                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/weather/mist.png";
+                    weatherIcon.src="C:/Users/laksh/OneDrive/Desktop/projects/weather/mist.png";
                 }
                 document.querySelector(".weather").style.display="block";
                 document.querySelector(".error").style.display="none";
